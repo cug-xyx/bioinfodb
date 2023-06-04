@@ -1,17 +1,21 @@
 ---
 title: "bioinfodb"
-author: "Yuxuan Xie"
-date: "2023/6/4"
-output: html_document
+output: rmarkdown::github_document
 ---
 
 这是一个Rcpp函数的尝试。
 
-```{r include=FALSE}
-devtools::load_all('.')
+## 安装方法
+
+```{r eval=FALSE, include=TRUE}
+devtools::install_github('cug-xyx/bioinfodb')
 ```
 
 ## `readOboFile`函数使用方法:
+
+```{r include=FALSE}
+devtools::load_all('.')
+```
 
 ```{r}
 library(bioinfodb)

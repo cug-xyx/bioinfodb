@@ -10,17 +10,6 @@ Rcpp::Rostream<true>&  Rcpp::Rcout = Rcpp::Rcpp_cout_get();
 Rcpp::Rostream<false>& Rcpp::Rcerr = Rcpp::Rcpp_cerr_get();
 #endif
 
-// plus_number
-double plus_number(double number);
-RcppExport SEXP _bioinfodb_plus_number(SEXP numberSEXP) {
-BEGIN_RCPP
-    Rcpp::RObject rcpp_result_gen;
-    Rcpp::RNGScope rcpp_rngScope_gen;
-    Rcpp::traits::input_parameter< double >::type number(numberSEXP);
-    rcpp_result_gen = Rcpp::wrap(plus_number(number));
-    return rcpp_result_gen;
-END_RCPP
-}
 // readGOFile
 Rcpp::DataFrame readGOFile(std::string filename);
 RcppExport SEXP _bioinfodb_readGOFile(SEXP filenameSEXP) {
@@ -32,21 +21,21 @@ BEGIN_RCPP
     return rcpp_result_gen;
 END_RCPP
 }
-// rcpp_hello
-List rcpp_hello();
-RcppExport SEXP _bioinfodb_rcpp_hello() {
+// readOboFile
+DataFrame readOboFile(std::string filepath);
+RcppExport SEXP _bioinfodb_readOboFile(SEXP filepathSEXP) {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;
-    rcpp_result_gen = Rcpp::wrap(rcpp_hello());
+    Rcpp::traits::input_parameter< std::string >::type filepath(filepathSEXP);
+    rcpp_result_gen = Rcpp::wrap(readOboFile(filepath));
     return rcpp_result_gen;
 END_RCPP
 }
 
 static const R_CallMethodDef CallEntries[] = {
-    {"_bioinfodb_plus_number", (DL_FUNC) &_bioinfodb_plus_number, 1},
     {"_bioinfodb_readGOFile", (DL_FUNC) &_bioinfodb_readGOFile, 1},
-    {"_bioinfodb_rcpp_hello", (DL_FUNC) &_bioinfodb_rcpp_hello, 0},
+    {"_bioinfodb_readOboFile", (DL_FUNC) &_bioinfodb_readOboFile, 1},
     {NULL, NULL, 0}
 };
 

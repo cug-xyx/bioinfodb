@@ -1,0 +1,11 @@
+id,name,namespace,is_a,alt_id
+GO:0000001,mitochondrion inheritance,biological_process,GO:0048308 ! organelle inheritance;GO:0048311 ! mitochondrion distribution,
+GO:0000002,mitochondrial genome maintenance,biological_process,GO:0007005 ! mitochondrion organization,
+GO:0000003,reproduction,biological_process,GO:0008150 ! biological_process,GO:0019952;GO:0050876
+GO:0000005,obsolete ribosomal chaperone activity,molecular_function,,
+GO:0000006,high-affinity zinc transmembrane transporter activity,molecular_function,GO:0005385 ! zinc ion transmembrane transporter activity,
+GO:0000007,low-affinity zinc ion transmembrane transporter activity,molecular_function,GO:0005385 ! zinc ion transmembrane transporter activity,
+GO:0000008,obsolete thioredoxin,molecular_function,,GO:0000013
+GO:0000009,"alpha-1,6-mannosyltransferase activity",molecular_function,GO:0000030 ! mannosyltransferase activity,
+GO:0000010,trans-hexaprenyltranstransferase activity,molecular_function,GO:0004659 ! prenyltransferase activity,GO:0036422
+GO:0000011,vacuole inheritance,biological_process,GO:0007033 ! vacuole organization;GO:0048308 ! organelle inheritance,

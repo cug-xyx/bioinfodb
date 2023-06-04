@@ -1,0 +1,14 @@
+GO	Description	level
+GO:0000001	mitochondrion inheritance	BP
+GO:0000002	mitochondrial genome maintenance	BP
+GO:0019952	reproduction	BP
+GO:0050876	reproduction	BP
+GO:0000003	reproduction	BP
+GO:0000005	obsolete ribosomal chaperone activity	MF
+GO:0000006	high-affinity zinc transmembrane transporter activity	MF
+GO:0000007	low-affinity zinc ion transmembrane transporter activity	MF
+GO:0000013	obsolete thioredoxin	MF
+GO:0000008	obsolete thioredoxin	MF
+GO:0000009	alpha-1,6-mannosyltransferase activity	MF
+GO:0036422	trans-hexaprenyltranstransferase activity	MF
+GO:0000010	trans-hexaprenyltranstransferase activity	MF

@@ -1,0 +1,27 @@
+---
+title: "bioinfodb"
+author: "Yuxuan Xie"
+date: "2023/6/4"
+output: html_document
+---
+
+这是一个Rcpp函数的尝试。
+
+```{r include=FALSE}
+devtools::load_all('.')
+```
+
+## `readOboFile`函数使用方法:
+
+```{r}
+library(bioinfodb)
+
+system.time({
+  df = bioinfodb::readOboFile('data-raw/go-basic.obo')
+})
+```
+
+## 结果展示
+```{r}
+tibble::as_tibble(df)
+```
